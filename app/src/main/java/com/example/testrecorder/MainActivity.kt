@@ -41,6 +41,9 @@ class MainActivity : AppCompatActivity() {
     var mPhoneNumber=""
 //    @Inject
 //    lateinit var recordingDao: RecordingDao
+    /*
+    * Added Test Comments for branches
+    * */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
