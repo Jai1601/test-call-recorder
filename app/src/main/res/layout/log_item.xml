@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:textColor="#434242"
+                android:text="Title" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdplay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/play" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/synced"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:layout_alignBottom="@id/time_ago"
+                app:srcCompat="@drawable/synced" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/time_ago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@id/crdplay"
+                android:textColor="#8BCA43"
+                android:text="2 hours ago" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#787676"
+        android:layout_below="@id/play"/>-->
+</RelativeLayout>
